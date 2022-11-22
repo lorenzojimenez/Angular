@@ -57,6 +57,8 @@ setEmpleados(misEmpleados:Empleado[]){
 
         this.dataService.eliminarEmpleado(indice);
 
-        this.dataService.guardarEmpleados(this.empleados);
+        if(this.empleados!=null)this.dataService.guardarEmpleados(this.empleados);
+        
+       
       }
 }
